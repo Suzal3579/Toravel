@@ -23,7 +23,7 @@ class ToDoController extends Controller
     */
     public function create()
     {
-        //
+        return view("toravel.create");
     }
     
     /**

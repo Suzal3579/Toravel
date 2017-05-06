@@ -1,32 +1,8 @@
 # Folder exclusion set garrdai ...
-app/*
 bootstrap/*
 config/*
-database/*
-public/*
-resources/*
-routes/*
 storage/*
 tests/*
-vendor/*
-
-# ignore garrnu naparrney kura haru ...
-!app/
-app/*
-!app/Http/
-app/Http/*
-!app/Http/Controllers/
-app/Http/Controllers/*
-!app/Http/Controllers/ToDoController.php
-
-!resources/
-resource/*
-!resources/views/
-
-!routes/
-routes/*
-!routes/web.php
-
 
 # Bhhera ko open root files haru exclude garrdai ...
 .env
