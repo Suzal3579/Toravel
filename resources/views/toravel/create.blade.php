@@ -13,7 +13,8 @@
 <div class="row">
     <div class="col-lg-3"></div>
     <div class="col-lg-6">
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="/todo" method="post">
+            {{csrf_field()}}
             <fieldset>
                 <legend>Enter The Field</legend>
                 <div class="form-group">
