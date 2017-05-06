@@ -7,23 +7,24 @@ use Illuminate\Database\Migrations\Migration;
 class CreateTodolistTable extends Migration
 {
     /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    * Run the migrations.
+    *
+    * @return void
+    */
     public function up()
     {
         Schema::create('todolist', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('todo');
             $table->timestamps();
         });
     }
-
+    
     /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+    * Reverse the migrations.
+    *
+    * @return void
+    */
     public function down()
     {
         Schema::dropIfExists('todolist');
