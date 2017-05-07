@@ -19,7 +19,8 @@
                 <legend>Enter The Field</legend>
                 <div class="form-group">
                     <div class="col-lg-12">
-                        <textarea class="form-control" rows="3" id="textArea"></textarea>
+                        {{-- tala ko textarea ko val affai return garrdo raixa k gari laravel le .... name mattra diye puggney --}}
+                        <textarea class="form-control" name = "todo" rows="5" id="textArea"></textarea>
                     </div>
                 </div>
                 <div class="form-group">

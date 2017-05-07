@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\todo;
 
 class ToDoController extends Controller
 {
@@ -13,7 +14,8 @@ class ToDoController extends Controller
     */
     public function index()
     {
-        return view("toravel.index");
+        $values = todo::all();
+        return view("toravel.index",compact("values"));
     }
     
     /**
@@ -34,7 +36,13 @@ class ToDoController extends Controller
     */
     public function store(Request $request)
     {
-        //
+        // todo vaneko model ko instance ...
+        $listItem = new todo();
+        //tyo todo instance le database ko todo ma gayera save gareko ...
+        
+        $listItem->todo = $request->todo;
+        $listItem->save();
+        return redirect("todo");
     }
     
     /**

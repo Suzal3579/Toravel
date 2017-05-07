@@ -14,9 +14,14 @@
     <div class="col-lg-3"></div>
     <div class="col-lg-6">
         <ul class="list-group">
+            @foreach($values as $val)
             <li class="list-group-item">
-                This is nice
+                {{-- $val->todo because table ma column name todo xa...  --}}
+                {{$val->todo}}
+                {{-- Using carbon function diffForHumans() --}}
+                <span class = "pull-right">{{$val->created_at->diffForHumans()}}</span>
             </li>
+            @endforeach
         </ul>
     </div>
     <div class="col-lg-3"></div>
