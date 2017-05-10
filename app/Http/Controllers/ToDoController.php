@@ -67,7 +67,6 @@ class ToDoController extends Controller
     {
         //testing only ...to be removed later ...
         return "$id from edit method";
-        
     }
     
     /**
@@ -90,6 +89,8 @@ class ToDoController extends Controller
     */
     public function destroy($id)
     {
-        return "$id delete aayo hai aayo ";
+        $currItem = todo::find($id);
+        $currItem->delete();
+        return redirect("todo");
     }
 }
