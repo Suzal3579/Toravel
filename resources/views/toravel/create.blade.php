@@ -16,7 +16,7 @@
         <form class="form-horizontal" action="/todo" method="post">
             {{csrf_field()}}
             <fieldset>
-                <legend>Enter The Field</legend>
+                <legend>Enter here</legend>
                 <div class="form-group">
                     <div class="col-lg-12">
                         {{-- tala ko textarea ko val affai return garrdo raixa k gari laravel le .... name mattra diye puggney --}}

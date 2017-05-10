@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class todo extends Model
 {
     protected $table = "todolist";
-    // Stting up accessor method ...
+    // Setting up accessor method ...
     public function getTodoAttribute($value){
         return ucfirst($value);
     }

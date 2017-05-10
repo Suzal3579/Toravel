@@ -31,8 +31,8 @@
                {{csrf_field()}}
                {{method_field("DELETE")}}
                <li>
-                    <button type = "submit" class = "btn btn-info btn-sm">
-                    Delete
+                    <button type = "submit" class = "btn btn-danger">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                     </button>
                </li>
             </form>
