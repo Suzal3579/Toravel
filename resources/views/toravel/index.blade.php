@@ -11,7 +11,7 @@
 </div>
 <br><br>
 <div class="row">
-    <div class="col-lg-3"></div>
+    <div class="col-lg-2"></div>
     <div class="col-lg-6">
         <ul class="list-group">
             @foreach($values as $val)
@@ -24,7 +24,20 @@
             @endforeach
         </ul>
     </div>
-    <div class="col-lg-3"></div>
+    <div class="col-lg-4">
+        <ul class="list-group" style = "list-style-type:none;">
+            @foreach($values as $valHere)
+            <form action = "{{"todo/".$valHere->id}}" method = "post">
+               {{csrf_field()}}
+               {{method_field("DELETE")}}
+               <li>
+                    <button type = "submit" class = "btn btn-info btn-sm">
+                    Delete
+                    </button>
+               </li>
+            </form>
+            @endforeach
+        </ul>
+    </div>
 </div>
-
 @endsection

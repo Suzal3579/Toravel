@@ -53,7 +53,8 @@ class ToDoController extends Controller
     */
     public function show($id)
     {
-        //
+        // testng only ... to be removed later ...
+        return "$id from show method";
     }
     
     /**
@@ -64,7 +65,9 @@ class ToDoController extends Controller
     */
     public function edit($id)
     {
-        //
+        //testing only ...to be removed later ...
+        return "$id from edit method";
+        
     }
     
     /**
@@ -87,6 +90,6 @@ class ToDoController extends Controller
     */
     public function destroy($id)
     {
-        //
+        return "$id delete aayo hai aayo ";
     }
 }
